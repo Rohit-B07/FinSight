@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+supabase
+httpx
+scipy
+numpy
+pandas
+joblib
+celery
+redis
+python-multipart
+python-jose
+python-dotenv

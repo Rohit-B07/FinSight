@@ -1,0 +1,35 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# ML models
+*.pkl
+*.joblib
+ml_training/models/*.pkl
+ml_training/data/*.csv
+
+# Node
+node_modules/
+.next/
+.next-stale/
+out/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/
