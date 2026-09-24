@@ -75,3 +75,7 @@ def get_model_info() -> dict:
         "status": "active",
         "version": _model_version
     }
+
+def is_model_loaded() -> bool:
+    """Return True if a production .pkl model is loaded in memory."""
+    return _model is not None

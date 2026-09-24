@@ -90,8 +90,8 @@ def run_optimization(org_id: str, total_budget: float, period: str, scenario_typ
         projected = recommended * rois[i]
         
         recommendations.append({
-            "category_id": cat["id"],
-            "category_name": cat["name"],
+            "category_id": cat.get("id", i + 1),
+            "category_name": cat.get("name") or cat.get("category_name", f"Category {i+1}"),
             "current_budget": current,
             "recommended_budget": recommended,
             "projected_impact": projected - recommended,
